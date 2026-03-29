@@ -1,5 +1,4 @@
 // src/infrastructure/supabase/repositories/SupabaseOrderRepository.ts
-// Sửa: dùng server client (createClient từ server.ts), không dùng browser client
 
 import { createClient } from '@/infrastructure/supabase/server'
 import { revalidatePath } from 'next/cache'
@@ -77,7 +76,27 @@ export class SupabaseOrderRepository implements IOrderRepository {
       .slice(0, 5)
   }
 
-  // Lấy danh sách orders đang conflict trên 1 sản phẩm, sắp xếp theo priority
+  async findLowStockCount(): Promise<number> {
+    const supabase = await createClient()
+    const { data, error } = await supabase
+      .from('products')
+      .select('id, stock, min_stock')
+      .gt('min_stock', 0)
+    if (error) throw error
+    return (data ?? []).filter(p => Number(p.stock) < Number(p.min_stock)).length
+  }
+
+  async findRecentActivities() {
+    const supabase = await createClient()
+    const { data, error } = await supabase
+      .from('activity_logs')
+      .select('id, staff_id, action, target_id, note, created_at')
+      .order('created_at', { ascending: false })
+      .limit(6)
+    if (error) throw error
+    return data ?? []
+  }
+
   async findConflictedOrders(productCode: string) {
     const supabase = await createClient()
     const { data, error } = await supabase
@@ -86,7 +105,6 @@ export class SupabaseOrderRepository implements IOrderRepository {
     return data ?? []
   }
 
-  // Resolve conflict: xác nhận đơn cao priority, hủy/pending đơn còn lại
   async resolveConflict(conflictId: string, resolution: {
     confirmOrderId: string
     cancelOrderIds: string[]
@@ -95,7 +113,6 @@ export class SupabaseOrderRepository implements IOrderRepository {
   }): Promise<void> {
     const supabase = await createClient()
 
-    // Cập nhật conflict record
     await supabase.from('order_conflicts').update({
       status:      'resolved',
       resolution:  'confirmed_high',
@@ -105,12 +122,10 @@ export class SupabaseOrderRepository implements IOrderRepository {
       resolved_by_priority: true,
     }).eq('id', conflictId)
 
-    // Xác nhận đơn được ưu tiên
     await supabase.from('orders')
       .update({ workflow_status: 'Đã xác nhận' })
       .eq('id', resolution.confirmOrderId)
 
-    // Hủy các đơn thấp hơn
     if (resolution.cancelOrderIds.length > 0) {
       await supabase.from('orders')
         .update({ workflow_status: 'Đã hủy' })

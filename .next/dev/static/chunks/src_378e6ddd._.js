@@ -348,6 +348,7 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$application$2f$use$2d$cases$2f$product$2f$data$3a$f9961b__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__ = __turbopack_context__.i("[project]/src/application/use-cases/product/data:f9961b [app-client] (ecmascript) <text/javascript>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$application$2f$use$2d$cases$2f$product$2f$data$3a$1f289c__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__ = __turbopack_context__.i("[project]/src/application/use-cases/product/data:1f289c [app-client] (ecmascript) <text/javascript>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$application$2f$use$2d$cases$2f$product$2f$data$3a$d4372c__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$text$2f$javascript$3e$__ = __turbopack_context__.i("[project]/src/application/use-cases/product/data:d4372c [app-client] (ecmascript) <text/javascript>");
@@ -355,6 +356,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$presentation$2f$compo
 ;
 var _s = __turbopack_context__.k.signature(), _s1 = __turbopack_context__.k.signature(), _s2 = __turbopack_context__.k.signature();
 'use client';
+;
 ;
 ;
 ;
@@ -529,7 +531,7 @@ function ProductModal({ initial, onClose, onSaved }) {
                             children: isEdit ? 'Cập nhật hàng hóa' : 'Thêm hàng hóa mới'
                         }, void 0, false, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 113,
+                            lineNumber: 114,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -544,13 +546,13 @@ function ProductModal({ initial, onClose, onSaved }) {
                             children: "✕"
                         }, void 0, false, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 116,
+                            lineNumber: 117,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                    lineNumber: 112,
+                    lineNumber: 113,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -570,7 +572,7 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     children: "Tên hàng *"
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 122,
+                                    lineNumber: 123,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -580,13 +582,13 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     placeholder: "Ví dụ: Quýt Mỹ (Kg)"
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 123,
+                                    lineNumber: 124,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 121,
+                            lineNumber: 122,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -596,7 +598,7 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     children: "Nhóm hàng"
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 127,
+                                    lineNumber: 128,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -607,18 +609,18 @@ function ProductModal({ initial, onClose, onSaved }) {
                                             children: g
                                         }, g, false, {
                                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                            lineNumber: 129,
+                                            lineNumber: 130,
                                             columnNumber: 32
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 128,
+                                    lineNumber: 129,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 126,
+                            lineNumber: 127,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -628,7 +630,7 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     children: "Loại hàng"
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 134,
+                                    lineNumber: 135,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -639,18 +641,18 @@ function ProductModal({ initial, onClose, onSaved }) {
                                             children: t
                                         }, t, false, {
                                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                            lineNumber: 136,
+                                            lineNumber: 137,
                                             columnNumber: 31
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 135,
+                                    lineNumber: 136,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 133,
+                            lineNumber: 134,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -660,7 +662,7 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     children: "Giá bán (₫)"
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 141,
+                                    lineNumber: 142,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -671,13 +673,13 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     min: 0
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 142,
+                                    lineNumber: 143,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 140,
+                            lineNumber: 141,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -687,7 +689,7 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     children: "Giá vốn (₫)"
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 146,
+                                    lineNumber: 147,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -698,13 +700,13 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     min: 0
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 147,
+                                    lineNumber: 148,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 145,
+                            lineNumber: 146,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -714,7 +716,7 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     children: "Tồn kho hiện tại"
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 151,
+                                    lineNumber: 152,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -725,13 +727,13 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     min: 0
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 152,
+                                    lineNumber: 153,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 150,
+                            lineNumber: 151,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -741,7 +743,7 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     children: "Dự kiến đặt hàng"
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 156,
+                                    lineNumber: 157,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -752,13 +754,13 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     min: 0
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 157,
+                                    lineNumber: 158,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 155,
+                            lineNumber: 156,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -768,7 +770,7 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     children: "Định mức tồn Min"
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 161,
+                                    lineNumber: 162,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -779,13 +781,13 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     min: 0
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 162,
+                                    lineNumber: 163,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 160,
+                            lineNumber: 161,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -795,7 +797,7 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     children: "Định mức tồn Max"
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 166,
+                                    lineNumber: 167,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -806,13 +808,13 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     min: 0
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 167,
+                                    lineNumber: 168,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 165,
+                            lineNumber: 166,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -822,7 +824,7 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     children: "Thương hiệu"
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 171,
+                                    lineNumber: 172,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -832,13 +834,13 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     placeholder: "Chưa có"
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 172,
+                                    lineNumber: 173,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 170,
+                            lineNumber: 171,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -848,7 +850,7 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     children: "Vị trí kho"
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 176,
+                                    lineNumber: 177,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -858,13 +860,13 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     placeholder: "Aisle 4, Shelf B"
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 177,
+                                    lineNumber: 178,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 175,
+                            lineNumber: 176,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -877,7 +879,7 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     children: "Nhà cung cấp (ID)"
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 181,
+                                    lineNumber: 182,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -887,13 +889,13 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     placeholder: "Mã nhà cung cấp"
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 182,
+                                    lineNumber: 183,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 180,
+                            lineNumber: 181,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -906,7 +908,7 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     children: "URL Hình ảnh"
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 186,
+                                    lineNumber: 187,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -916,13 +918,13 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     placeholder: "https://..."
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 187,
+                                    lineNumber: 188,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 185,
+                            lineNumber: 186,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -935,7 +937,7 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     children: "Ghi chú"
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 191,
+                                    lineNumber: 192,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -950,13 +952,13 @@ function ProductModal({ initial, onClose, onSaved }) {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 192,
+                                    lineNumber: 193,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 190,
+                            lineNumber: 191,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -981,14 +983,14 @@ function ProductModal({ initial, onClose, onSaved }) {
                                             onChange: (e)=>set('can_sell_direct', e.target.checked)
                                         }, void 0, false, {
                                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                            lineNumber: 203,
+                                            lineNumber: 204,
                                             columnNumber: 15
                                         }, this),
                                         "Bán trực tiếp"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 202,
+                                    lineNumber: 203,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -1006,26 +1008,26 @@ function ProductModal({ initial, onClose, onSaved }) {
                                             onChange: (e)=>set('has_points', e.target.checked)
                                         }, void 0, false, {
                                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                            lineNumber: 207,
+                                            lineNumber: 208,
                                             columnNumber: 15
                                         }, this),
                                         "Tích điểm"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 206,
+                                    lineNumber: 207,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 201,
+                            lineNumber: 202,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                    lineNumber: 119,
+                    lineNumber: 120,
                     columnNumber: 9
                 }, this),
                 err && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1040,7 +1042,7 @@ function ProductModal({ initial, onClose, onSaved }) {
                     children: err
                 }, void 0, false, {
                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                    lineNumber: 213,
+                    lineNumber: 214,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1066,7 +1068,7 @@ function ProductModal({ initial, onClose, onSaved }) {
                             children: "Hủy"
                         }, void 0, false, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 216,
+                            lineNumber: 217,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1081,28 +1083,28 @@ function ProductModal({ initial, onClose, onSaved }) {
                             children: isPending ? '...' : isEdit ? 'Cập nhật' : 'Thêm mới'
                         }, void 0, false, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 219,
+                            lineNumber: 220,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                    lineNumber: 215,
+                    lineNumber: 216,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-            lineNumber: 108,
+            lineNumber: 109,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-        lineNumber: 107,
+        lineNumber: 108,
         columnNumber: 5
     }, this);
 }
-_s(ProductModal, "zBNfi1Aqnz3yLpv01guaRBCGqrA=", false, function() {
+_s(ProductModal, "vNW5Ot5sUSdsKIJwc24ti7Iu5l0=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransition"]
     ];
@@ -1139,7 +1141,7 @@ function ExpandedRow({ product, onEdit }) {
                     children: label
                 }, void 0, false, {
                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                    lineNumber: 245,
+                    lineNumber: 246,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1154,18 +1156,18 @@ function ExpandedRow({ product, onEdit }) {
                         children: "Chưa có"
                     }, void 0, false, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 246,
+                        lineNumber: 247,
                         columnNumber: 84
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                    lineNumber: 246,
+                    lineNumber: 247,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-            lineNumber: 244,
+            lineNumber: 245,
             columnNumber: 7
         }, this);
     }
@@ -1204,12 +1206,12 @@ function ExpandedRow({ product, onEdit }) {
                         children: t === 'info' ? 'Thông tin' : 'Tồn kho'
                     }, t, false, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 259,
+                        lineNumber: 260,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                lineNumber: 257,
+                lineNumber: 258,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1253,7 +1255,7 @@ function ExpandedRow({ product, onEdit }) {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 280,
+                                        lineNumber: 281,
                                         columnNumber: 17
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         style: {
@@ -1262,7 +1264,7 @@ function ExpandedRow({ product, onEdit }) {
                                         children: "📦"
                                     }, void 0, false, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 281,
+                                        lineNumber: 282,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1282,13 +1284,13 @@ function ExpandedRow({ product, onEdit }) {
                                         children: "Ảnh chính"
                                     }, void 0, false, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 283,
+                                        lineNumber: 284,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                lineNumber: 274,
+                                lineNumber: 275,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1318,7 +1320,7 @@ function ExpandedRow({ product, onEdit }) {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 294,
+                                                lineNumber: 295,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1330,13 +1332,13 @@ function ExpandedRow({ product, onEdit }) {
                                                 children: product.can_sell_direct ? 'Bán trực tiếp' : 'Không bán trực tiếp'
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 295,
+                                                lineNumber: 296,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 293,
+                                        lineNumber: 294,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1356,7 +1358,7 @@ function ExpandedRow({ product, onEdit }) {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 300,
+                                                lineNumber: 301,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1368,25 +1370,25 @@ function ExpandedRow({ product, onEdit }) {
                                                 children: product.has_points ? 'Có tích điểm' : 'Không tích điểm'
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 301,
+                                                lineNumber: 302,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 299,
+                                        lineNumber: 300,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                lineNumber: 292,
+                                lineNumber: 293,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 273,
+                        lineNumber: 274,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1405,7 +1407,7 @@ function ExpandedRow({ product, onEdit }) {
                                 children: product.name
                             }, void 0, false, {
                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                lineNumber: 310,
+                                lineNumber: 311,
                                 columnNumber: 11
                             }, this),
                             tab === 'info' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -1428,12 +1430,12 @@ function ExpandedRow({ product, onEdit }) {
                                                     children: product.code
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                    lineNumber: 318,
+                                                    lineNumber: 319,
                                                     columnNumber: 47
                                                 }, void 0)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 318,
+                                                lineNumber: 319,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Field, {
@@ -1455,19 +1457,19 @@ function ExpandedRow({ product, onEdit }) {
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                            lineNumber: 321,
+                                                            lineNumber: 322,
                                                             columnNumber: 21
                                                         }, void 0),
                                                         product.group
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                    lineNumber: 320,
+                                                    lineNumber: 321,
                                                     columnNumber: 19
                                                 }, void 0)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 319,
+                                                lineNumber: 320,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Field, {
@@ -1475,13 +1477,13 @@ function ExpandedRow({ product, onEdit }) {
                                                 value: product.type
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 325,
+                                                lineNumber: 326,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 317,
+                                        lineNumber: 318,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1497,7 +1499,7 @@ function ExpandedRow({ product, onEdit }) {
                                                 value: product.brand
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 329,
+                                                lineNumber: 330,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Field, {
@@ -1505,7 +1507,7 @@ function ExpandedRow({ product, onEdit }) {
                                                 value: `Min: ${product.min_stock} | Max: ${product.max_stock}`
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 330,
+                                                lineNumber: 331,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Field, {
@@ -1513,13 +1515,13 @@ function ExpandedRow({ product, onEdit }) {
                                                 value: product.location
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 331,
+                                                lineNumber: 332,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 328,
+                                        lineNumber: 329,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1543,12 +1545,12 @@ function ExpandedRow({ product, onEdit }) {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                    lineNumber: 335,
+                                                    lineNumber: 336,
                                                     columnNumber: 47
                                                 }, void 0)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 335,
+                                                lineNumber: 336,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Field, {
@@ -1556,18 +1558,18 @@ function ExpandedRow({ product, onEdit }) {
                                                 value: `${fmt(product.cost_price)} ₫`
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 336,
+                                                lineNumber: 337,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {}, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 337,
+                                                lineNumber: 338,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 334,
+                                        lineNumber: 335,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1592,7 +1594,7 @@ function ExpandedRow({ product, onEdit }) {
                                                         children: "Ghi chú đặt hàng"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                        lineNumber: 343,
+                                                        lineNumber: 344,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1607,13 +1609,13 @@ function ExpandedRow({ product, onEdit }) {
                                                         children: product.note || 'Ghi chú cho món hàng...'
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                        lineNumber: 346,
+                                                        lineNumber: 347,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 342,
+                                                lineNumber: 343,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1630,7 +1632,7 @@ function ExpandedRow({ product, onEdit }) {
                                                         children: "Nhà cung cấp"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                        lineNumber: 354,
+                                                        lineNumber: 355,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1653,12 +1655,12 @@ function ExpandedRow({ product, onEdit }) {
                                                                     children: "Chưa có"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                                    lineNumber: 361,
+                                                                    lineNumber: 362,
                                                                     columnNumber: 76
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                                lineNumber: 361,
+                                                                lineNumber: 362,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -1673,18 +1675,18 @@ function ExpandedRow({ product, onEdit }) {
                                                                     strokeLinecap: "round"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                                    lineNumber: 363,
+                                                                    lineNumber: 364,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                                lineNumber: 362,
+                                                                lineNumber: 363,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                        lineNumber: 357,
+                                                        lineNumber: 358,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1710,7 +1712,7 @@ function ExpandedRow({ product, onEdit }) {
                                                                 children: "Hủy"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                                lineNumber: 367,
+                                                                lineNumber: 368,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1729,25 +1731,25 @@ function ExpandedRow({ product, onEdit }) {
                                                                 children: "Cập nhật"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                                lineNumber: 370,
+                                                                lineNumber: 371,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                        lineNumber: 366,
+                                                        lineNumber: 367,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 353,
+                                                lineNumber: 354,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 341,
+                                        lineNumber: 342,
                                         columnNumber: 15
                                     }, this)
                                 ]
@@ -1778,7 +1780,7 @@ function ExpandedRow({ product, onEdit }) {
                                                 children: "Tồn kho hiện tại"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 385,
+                                                lineNumber: 386,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1790,13 +1792,13 @@ function ExpandedRow({ product, onEdit }) {
                                                 children: product.stock
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 386,
+                                                lineNumber: 387,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 384,
+                                        lineNumber: 385,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1818,7 +1820,7 @@ function ExpandedRow({ product, onEdit }) {
                                                 children: "Định mức Min"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 389,
+                                                lineNumber: 390,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1830,13 +1832,13 @@ function ExpandedRow({ product, onEdit }) {
                                                 children: product.min_stock
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 390,
+                                                lineNumber: 391,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 388,
+                                        lineNumber: 389,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1858,7 +1860,7 @@ function ExpandedRow({ product, onEdit }) {
                                                 children: "Định mức Max"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 393,
+                                                lineNumber: 394,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1870,13 +1872,13 @@ function ExpandedRow({ product, onEdit }) {
                                                 children: product.max_stock
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 394,
+                                                lineNumber: 395,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 392,
+                                        lineNumber: 393,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1898,7 +1900,7 @@ function ExpandedRow({ product, onEdit }) {
                                                 children: "Dự kiến đặt hàng"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 397,
+                                                lineNumber: 398,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1910,13 +1912,13 @@ function ExpandedRow({ product, onEdit }) {
                                                 children: product.expected_order ?? '—'
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 398,
+                                                lineNumber: 399,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 396,
+                                        lineNumber: 397,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1938,7 +1940,7 @@ function ExpandedRow({ product, onEdit }) {
                                                 children: "Vị trí"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 401,
+                                                lineNumber: 402,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1951,37 +1953,37 @@ function ExpandedRow({ product, onEdit }) {
                                                 children: product.location ?? '—'
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 402,
+                                                lineNumber: 403,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 400,
+                                        lineNumber: 401,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                lineNumber: 383,
+                                lineNumber: 384,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 309,
+                        lineNumber: 310,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                lineNumber: 271,
+                lineNumber: 272,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-        lineNumber: 252,
+        lineNumber: 253,
         columnNumber: 5
     }, this);
 }
@@ -2027,12 +2029,12 @@ function TableRow({ product, selected, expanded, onSelect, onExpand, onEdit }) {
                             }
                         }, void 0, false, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 438,
+                            lineNumber: 439,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 436,
+                        lineNumber: 437,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2057,17 +2059,17 @@ function TableRow({ product, selected, expanded, onSelect, onExpand, onEdit }) {
                                 strokeLinecap: "round"
                             }, void 0, false, {
                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                lineNumber: 444,
+                                lineNumber: 445,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 443,
+                            lineNumber: 444,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 442,
+                        lineNumber: 443,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2102,12 +2104,12 @@ function TableRow({ product, selected, expanded, onSelect, onExpand, onEdit }) {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 451,
+                                    lineNumber: 452,
                                     columnNumber: 17
                                 }, this) : '📦'
                             }, void 0, false, {
                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                lineNumber: 449,
+                                lineNumber: 450,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2119,13 +2121,13 @@ function TableRow({ product, selected, expanded, onSelect, onExpand, onEdit }) {
                                 children: product.code
                             }, void 0, false, {
                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                lineNumber: 455,
+                                lineNumber: 456,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 448,
+                        lineNumber: 449,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2143,12 +2145,12 @@ function TableRow({ product, selected, expanded, onSelect, onExpand, onEdit }) {
                             children: product.name
                         }, void 0, false, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 459,
+                            lineNumber: 460,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 458,
+                        lineNumber: 459,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2166,12 +2168,12 @@ function TableRow({ product, selected, expanded, onSelect, onExpand, onEdit }) {
                             children: fmt(product.sell_price)
                         }, void 0, false, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 463,
+                            lineNumber: 464,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 462,
+                        lineNumber: 463,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2189,12 +2191,12 @@ function TableRow({ product, selected, expanded, onSelect, onExpand, onEdit }) {
                             children: fmt(product.cost_price)
                         }, void 0, false, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 467,
+                            lineNumber: 468,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 466,
+                        lineNumber: 467,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2213,12 +2215,12 @@ function TableRow({ product, selected, expanded, onSelect, onExpand, onEdit }) {
                             children: product.stock
                         }, void 0, false, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 471,
+                            lineNumber: 472,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 470,
+                        lineNumber: 471,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2239,7 +2241,7 @@ function TableRow({ product, selected, expanded, onSelect, onExpand, onEdit }) {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 476,
+                            lineNumber: 477,
                             columnNumber: 15
                         }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             style: {
@@ -2249,18 +2251,18 @@ function TableRow({ product, selected, expanded, onSelect, onExpand, onEdit }) {
                             children: "—"
                         }, void 0, false, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 477,
+                            lineNumber: 478,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 474,
+                        lineNumber: 475,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                lineNumber: 426,
+                lineNumber: 427,
                 columnNumber: 7
             }, this),
             expanded && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2273,12 +2275,12 @@ function TableRow({ product, selected, expanded, onSelect, onExpand, onEdit }) {
                     onEdit: onEdit
                 }, void 0, false, {
                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                    lineNumber: 485,
+                    lineNumber: 486,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                lineNumber: 484,
+                lineNumber: 485,
                 columnNumber: 9
             }, this)
         ]
@@ -2330,7 +2332,7 @@ function Sidebar({ typeFilter, setTypeFilter, groupFilter, setGroupFilter, stock
                 children: "Hàng hóa"
             }, void 0, false, {
                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                lineNumber: 512,
+                lineNumber: 513,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2366,32 +2368,32 @@ function Sidebar({ typeFilter, setTypeFilter, groupFilter, setGroupFilter, stock
                                     points: "1 4 1 10 7 10"
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 517,
+                                    lineNumber: 518,
                                     columnNumber: 109
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                     d: "M3.51 15a9 9 0 1 0 .49-4.5"
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 517,
+                                    lineNumber: 518,
                                     columnNumber: 143
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 517,
+                            lineNumber: 518,
                             columnNumber: 11
                         }, this),
                         "Đặt lại bộ lọc"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                    lineNumber: 516,
+                    lineNumber: 517,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                lineNumber: 515,
+                lineNumber: 516,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2402,7 +2404,7 @@ function Sidebar({ typeFilter, setTypeFilter, groupFilter, setGroupFilter, stock
                         children: "Loại hàng"
                     }, void 0, false, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 524,
+                        lineNumber: 525,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2425,25 +2427,25 @@ function Sidebar({ typeFilter, setTypeFilter, groupFilter, setGroupFilter, stock
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 528,
+                                        lineNumber: 529,
                                         columnNumber: 15
                                     }, this),
                                     t
                                 ]
                             }, t, true, {
                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                lineNumber: 527,
+                                lineNumber: 528,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 525,
+                        lineNumber: 526,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                lineNumber: 523,
+                lineNumber: 524,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2454,7 +2456,7 @@ function Sidebar({ typeFilter, setTypeFilter, groupFilter, setGroupFilter, stock
                         children: "Nhóm hàng"
                     }, void 0, false, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 538,
+                        lineNumber: 539,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2477,18 +2479,18 @@ function Sidebar({ typeFilter, setTypeFilter, groupFilter, setGroupFilter, stock
                                 children: g
                             }, g, false, {
                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                lineNumber: 541,
+                                lineNumber: 542,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 539,
+                        lineNumber: 540,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                lineNumber: 537,
+                lineNumber: 538,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2499,7 +2501,7 @@ function Sidebar({ typeFilter, setTypeFilter, groupFilter, setGroupFilter, stock
                         children: "Tồn kho"
                     }, void 0, false, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 556,
+                        lineNumber: 557,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2545,31 +2547,31 @@ function Sidebar({ typeFilter, setTypeFilter, groupFilter, setGroupFilter, stock
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 566,
+                                        lineNumber: 567,
                                         columnNumber: 15
                                     }, this),
                                     opt.label
                                 ]
                             }, opt.val, true, {
                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                lineNumber: 565,
+                                lineNumber: 566,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 557,
+                        lineNumber: 558,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                lineNumber: 555,
+                lineNumber: 556,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-        lineNumber: 511,
+        lineNumber: 512,
         columnNumber: 5
     }, this);
 }
@@ -2577,7 +2579,17 @@ _c3 = Sidebar;
 function ProductTable({ initialProducts }) {
     _s2();
     const [products, setProducts] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(initialProducts);
-    const [search, setSearch] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
+    const searchParams = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"])();
+    const [search, setSearch] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(searchParams.get('q') ?? '');
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "ProductTable.useEffect": ()=>{
+            const q = searchParams.get('q') ?? '';
+            setSearch(q);
+            setPage(1);
+        }
+    }["ProductTable.useEffect"], [
+        searchParams
+    ]);
     const [typeFilter, setTypeFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [groupFilter, setGroupFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const [stockFilter, setStockFilter] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('all');
@@ -2683,7 +2695,7 @@ function ProductTable({ initialProducts }) {
                 onReset: handleReset
             }, void 0, false, {
                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                lineNumber: 651,
+                lineNumber: 659,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2734,7 +2746,7 @@ function ProductTable({ initialProducts }) {
                                                 r: "8"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 673,
+                                                lineNumber: 681,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -2744,13 +2756,13 @@ function ProductTable({ initialProducts }) {
                                                 y2: "16.65"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 673,
+                                                lineNumber: 681,
                                                 columnNumber: 47
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 671,
+                                        lineNumber: 679,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2773,13 +2785,13 @@ function ProductTable({ initialProducts }) {
                                         }
                                     }, void 0, false, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 675,
+                                        lineNumber: 683,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                lineNumber: 670,
+                                lineNumber: 678,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2814,7 +2826,7 @@ function ProductTable({ initialProducts }) {
                                                         y2: "19"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                        lineNumber: 686,
+                                                        lineNumber: 694,
                                                         columnNumber: 113
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -2824,20 +2836,20 @@ function ProductTable({ initialProducts }) {
                                                         y2: "12"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                        lineNumber: 686,
+                                                        lineNumber: 694,
                                                         columnNumber: 151
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 686,
+                                                lineNumber: 694,
                                                 columnNumber: 15
                                             }, this),
                                             "Thêm hàng"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 685,
+                                        lineNumber: 693,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2861,14 +2873,14 @@ function ProductTable({ initialProducts }) {
                                                         d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                        lineNumber: 690,
+                                                        lineNumber: 698,
                                                         columnNumber: 113
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("polyline", {
                                                         points: "17 8 12 3 7 8"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                        lineNumber: 690,
+                                                        lineNumber: 698,
                                                         columnNumber: 166
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -2878,20 +2890,20 @@ function ProductTable({ initialProducts }) {
                                                         y2: "15"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                        lineNumber: 690,
+                                                        lineNumber: 698,
                                                         columnNumber: 200
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 690,
+                                                lineNumber: 698,
                                                 columnNumber: 15
                                             }, this),
                                             "Nhập file"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 689,
+                                        lineNumber: 697,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2915,14 +2927,14 @@ function ProductTable({ initialProducts }) {
                                                         d: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                        lineNumber: 694,
+                                                        lineNumber: 702,
                                                         columnNumber: 113
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("polyline", {
                                                         points: "7 10 12 15 17 10"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                        lineNumber: 694,
+                                                        lineNumber: 702,
                                                         columnNumber: 166
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("line", {
@@ -2932,32 +2944,32 @@ function ProductTable({ initialProducts }) {
                                                         y2: "3"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                        lineNumber: 694,
+                                                        lineNumber: 702,
                                                         columnNumber: 203
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 694,
+                                                lineNumber: 702,
                                                 columnNumber: 15
                                             }, this),
                                             "Xuất file"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 693,
+                                        lineNumber: 701,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                lineNumber: 684,
+                                lineNumber: 692,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 665,
+                        lineNumber: 673,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2987,17 +2999,17 @@ function ProductTable({ initialProducts }) {
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 707,
+                                    lineNumber: 715,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                lineNumber: 706,
+                                lineNumber: 714,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {}, void 0, false, {
                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                lineNumber: 712,
+                                lineNumber: 720,
                                 columnNumber: 11
                             }, this),
                             [
@@ -3036,13 +3048,13 @@ function ProductTable({ initialProducts }) {
                                     children: col.label
                                 }, col.label, false, {
                                     fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                    lineNumber: 721,
+                                    lineNumber: 729,
                                     columnNumber: 13
                                 }, this))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 701,
+                        lineNumber: 709,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3060,7 +3072,7 @@ function ProductTable({ initialProducts }) {
                             children: "Không tìm thấy hàng hóa phù hợp"
                         }, void 0, false, {
                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                            lineNumber: 730,
+                            lineNumber: 738,
                             columnNumber: 15
                         }, this) : paginated.map((p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(TableRow, {
                                 product: p,
@@ -3074,12 +3086,12 @@ function ProductTable({ initialProducts }) {
                                 }
                             }, p.id, false, {
                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                lineNumber: 732,
+                                lineNumber: 740,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 728,
+                        lineNumber: 736,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3115,7 +3127,7 @@ function ProductTable({ initialProducts }) {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 750,
+                                        lineNumber: 758,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -3132,27 +3144,27 @@ function ProductTable({ initialProducts }) {
                                                 children: "10"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 754,
+                                                lineNumber: 762,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                 children: "20"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 754,
+                                                lineNumber: 762,
                                                 columnNumber: 34
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                 children: "50"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                                lineNumber: 754,
+                                                lineNumber: 762,
                                                 columnNumber: 53
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 753,
+                                        lineNumber: 761,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3163,13 +3175,13 @@ function ProductTable({ initialProducts }) {
                                         children: "/ trang"
                                     }, void 0, false, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 756,
+                                        lineNumber: 764,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                lineNumber: 749,
+                                lineNumber: 757,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3185,7 +3197,7 @@ function ProductTable({ initialProducts }) {
                                         children: "‹"
                                     }, void 0, false, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 759,
+                                        lineNumber: 767,
                                         columnNumber: 13
                                     }, this),
                                     Array.from({
@@ -3196,7 +3208,7 @@ function ProductTable({ initialProducts }) {
                                             children: n
                                         }, n, false, {
                                             fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                            lineNumber: 761,
+                                            lineNumber: 769,
                                             columnNumber: 15
                                         }, this)),
                                     totalPages > 5 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -3207,7 +3219,7 @@ function ProductTable({ initialProducts }) {
                                         children: "…"
                                     }, void 0, false, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 763,
+                                        lineNumber: 771,
                                         columnNumber: 32
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$presentation$2f$components$2f$ui$2f$SharedUI$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PgBtn"], {
@@ -3216,25 +3228,25 @@ function ProductTable({ initialProducts }) {
                                         children: "›"
                                     }, void 0, false, {
                                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                        lineNumber: 764,
+                                        lineNumber: 772,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                                lineNumber: 758,
+                                lineNumber: 766,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                        lineNumber: 745,
+                        lineNumber: 753,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                lineNumber: 659,
+                lineNumber: 667,
                 columnNumber: 7
             }, this),
             showAdd && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ProductModal, {
@@ -3242,7 +3254,7 @@ function ProductTable({ initialProducts }) {
                 onSaved: handleSaved
             }, void 0, false, {
                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                lineNumber: 770,
+                lineNumber: 778,
                 columnNumber: 24
             }, this),
             editProduct && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(ProductModal, {
@@ -3251,7 +3263,7 @@ function ProductTable({ initialProducts }) {
                 onSaved: handleSaved
             }, void 0, false, {
                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                lineNumber: 771,
+                lineNumber: 779,
                 columnNumber: 24
             }, this),
             showConfirmDelete && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$presentation$2f$components$2f$ui$2f$SharedUI$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ConfirmDeleteModal"], {
@@ -3261,7 +3273,7 @@ function ProductTable({ initialProducts }) {
                 onCancel: ()=>setShowConfirmDelete(false)
             }, void 0, false, {
                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                lineNumber: 773,
+                lineNumber: 781,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$presentation$2f$components$2f$ui$2f$SharedUI$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DeleteBar"], {
@@ -3269,18 +3281,19 @@ function ProductTable({ initialProducts }) {
                 onDelete: ()=>setShowConfirmDelete(true)
             }, void 0, false, {
                 fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-                lineNumber: 776,
+                lineNumber: 784,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/presentation/components/product/ProductTable.tsx",
-        lineNumber: 649,
+        lineNumber: 657,
         columnNumber: 5
     }, this);
 }
-_s2(ProductTable, "49gz6AgnTzTZ1Cz1pjarsPQe92s=", false, function() {
+_s2(ProductTable, "r8k+IbIZr9s8oQwBLKSOl/AT7o0=", false, function() {
     return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTransition"]
     ];
 });

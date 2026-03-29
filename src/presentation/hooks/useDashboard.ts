@@ -3,7 +3,16 @@
 
 import { useEffect, useState } from 'react'
 
-interface DashboardData {
+export interface ActivityLog {
+  id: number
+  staff_id: string
+  action: string
+  target_id: string | null
+  note: string | null
+  created_at: string
+}
+
+export interface DashboardData {
   todaySummary: {
     totalRevenue:  number
     totalOrders:   number
@@ -11,15 +20,16 @@ interface DashboardData {
   }
   monthlyRevenue: { month: string; revenue: number }[]
   topProducts: { code: string; name: string; totalSold: number }[]
+  lowStockCount: number
+  recentActivities: ActivityLog[]
 }
 
 export function useDashboard() {
-  const [data, setData]     = useState<DashboardData | null>(null)
+  const [data, setData]       = useState<DashboardData | null>(null)
   const [loading, setLoading] = useState(true)
-  const [error, setError]   = useState<string | null>(null)
+  const [error, setError]     = useState<string | null>(null)
 
   useEffect(() => {
-    // Gọi server action qua fetch thay vì dùng browser supabase trực tiếp
     fetch('/api/dashboard-summary')
       .then(res => res.json())
       .then(setData)

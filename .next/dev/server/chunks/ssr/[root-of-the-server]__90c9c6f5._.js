@@ -184,7 +184,6 @@ __turbopack_context__.s([
     ()=>SupabaseOrderRepository
 ]);
 // src/infrastructure/supabase/repositories/SupabaseOrderRepository.ts
-// Sửa: dùng server client (createClient từ server.ts), không dùng browser client
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$infrastructure$2f$supabase$2f$server$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/infrastructure/supabase/server.ts [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$cache$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/cache.js [app-rsc] (ecmascript)");
 ;
@@ -258,7 +257,20 @@ class SupabaseOrderRepository {
                 totalSold: val.total
             })).sort((a, b)=>b.totalSold - a.totalSold).slice(0, 5);
     }
-    // Lấy danh sách orders đang conflict trên 1 sản phẩm, sắp xếp theo priority
+    async findLowStockCount() {
+        const supabase = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$infrastructure$2f$supabase$2f$server$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["createClient"])();
+        const { data, error } = await supabase.from('products').select('id, stock, min_stock').gt('min_stock', 0);
+        if (error) throw error;
+        return (data ?? []).filter((p)=>Number(p.stock) < Number(p.min_stock)).length;
+    }
+    async findRecentActivities() {
+        const supabase = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$infrastructure$2f$supabase$2f$server$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["createClient"])();
+        const { data, error } = await supabase.from('activity_logs').select('id, staff_id, action, target_id, note, created_at').order('created_at', {
+            ascending: false
+        }).limit(6);
+        if (error) throw error;
+        return data ?? [];
+    }
     async findConflictedOrders(productCode) {
         const supabase = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$infrastructure$2f$supabase$2f$server$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["createClient"])();
         const { data, error } = await supabase.rpc('get_conflicted_orders', {
@@ -267,10 +279,8 @@ class SupabaseOrderRepository {
         if (error) throw new Error(error.message);
         return data ?? [];
     }
-    // Resolve conflict: xác nhận đơn cao priority, hủy/pending đơn còn lại
     async resolveConflict(conflictId, resolution) {
         const supabase = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$infrastructure$2f$supabase$2f$server$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["createClient"])();
-        // Cập nhật conflict record
         await supabase.from('order_conflicts').update({
             status: 'resolved',
             resolution: 'confirmed_high',
@@ -279,11 +289,9 @@ class SupabaseOrderRepository {
             resolved_at: new Date().toISOString(),
             resolved_by_priority: true
         }).eq('id', conflictId);
-        // Xác nhận đơn được ưu tiên
         await supabase.from('orders').update({
             workflow_status: 'Đã xác nhận'
         }).eq('id', resolution.confirmOrderId);
-        // Hủy các đơn thấp hơn
         if (resolution.cancelOrderIds.length > 0) {
             await supabase.from('orders').update({
                 workflow_status: 'Đã hủy'

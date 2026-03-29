@@ -1,55 +1,66 @@
 'use client'
 
 import { JSX } from 'react'
+import { useDashboard } from '@/presentation/hooks/useDashboard'
 import { MonthlyRevenueSection } from './MonthlyRevenueSection'
 import { RecentActivitiesSection } from './RecentActivitiesSection'
 import { SalesPerformanceSection } from './SalesPerformanceSection'
 
-
-const statCards = [
-  {
-    label: '6 hóa đơn',
-    value: '$12,750',
-    iconBg: 'bg-[#FFF5D9]',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <path d="M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zm0 8c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3zm0 2c-5.33 0-8 2.686-8 4v1h16v-1c0-1.314-2.67-4-8-4z" fill="#FFBB38"/>
-      </svg>
-    ),
-  },
-  {
-    label: 'Đơn hàng hóa',
-    value: '$3,460',
-    iconBg: 'bg-[#FFE0EB]',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z" fill="#FF82AC"/>
-      </svg>
-    ),
-  },
-  {
-    label: 'Sắp hết hạn',
-    value: '9',
-    iconBg: 'bg-[#DCFAF8]',
-    icon: (
-      <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
-        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" fill="#16DBCC"/>
-      </svg>
-    ),
-  },
-]
+const fmt = (n: number) =>
+  n >= 1_000_000
+    ? (n / 1_000_000).toFixed(1).replace(/\.0$/, '') + 'tr'
+    : n >= 1_000
+    ? (n / 1_000).toFixed(0) + 'k'
+    : String(n)
 
 export const Dashboard = (): JSX.Element => {
+  const { data, loading } = useDashboard()
+
+  const totalRevenue  = data?.todaySummary.totalRevenue  ?? 0
+  const totalOrders   = data?.todaySummary.totalOrders   ?? 0
+  const lowStockCount = data?.lowStockCount              ?? 0
+
+  const statCards = [
+    {
+      label: loading ? '...' : `${totalOrders} hóa đơn hôm nay`,
+      value: loading ? '—' : fmt(totalRevenue) + '₫',
+      iconBg: 'bg-[#FFF5D9]',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
+          <path d="M12 2C9.243 2 7 4.243 7 7s2.243 5 5 5 5-2.243 5-5-2.243-5-5-5zm0 8c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3zm0 2c-5.33 0-8 2.686-8 4v1h16v-1c0-1.314-2.67-4-8-4z" fill="#FFBB38"/>
+        </svg>
+      ),
+    },
+    {
+      label: 'Đơn đang xử lý',
+      value: loading ? '—' : String(data?.todaySummary.pendingOrders ?? 0),
+      iconBg: 'bg-[#FFE0EB]',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
+          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z" fill="#FF82AC"/>
+        </svg>
+      ),
+    },
+    {
+      label: 'Sắp hết hàng',
+      value: loading ? '—' : String(lowStockCount),
+      iconBg: 'bg-[#DCFAF8]',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" className="w-6 h-6">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" fill="#16DBCC"/>
+        </svg>
+      ),
+    },
+  ]
+
   return (
     <div className="min-h-screen bg-[#F5F7FA] font-['Inter',sans-serif] w-full">
       <div className="max-w-[1440px] mx-auto px-6 py-6">
-        
-        {/* 1. Tiêu đề */}
+
         <h2 className="text-[#343C6A] text-[22px] font-semibold mb-6">
           Kết quả bán hàng hôm nay
         </h2>
 
-        {/* 2. Thẻ thống kê (Stat Cards) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           {statCards.map((card) => (
             <div key={card.label} className="bg-white rounded-[25px] px-8 py-5 flex items-center gap-4 shadow-sm">
@@ -64,22 +75,18 @@ export const Dashboard = (): JSX.Element => {
           ))}
         </div>
 
-        {/* 3. Hàng biểu đồ (Dùng Grid 3 cột) */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
-          {/* Doanh thu tháng - Chiếm 2 phần */}
           <div className="lg:col-span-2">
-            <MonthlyRevenueSection />
+            <MonthlyRevenueSection monthlyRevenue={data?.monthlyRevenue ?? []} loading={loading} />
           </div>
-          {/* Hoạt động gần đây - Chiếm 1 phần */}
           <div className="lg:col-span-1">
-            <RecentActivitiesSection />
+            <RecentActivitiesSection activities={data?.recentActivities ?? []} loading={loading} />
           </div>
         </div>
 
-        {/* 4. Hàng dưới cùng (Bảng sản phẩm tràn hết 3 cột) */}
         <div className="grid grid-cols-1 gap-6">
           <div className="w-full">
-            <SalesPerformanceSection />
+            <SalesPerformanceSection topProducts={data?.topProducts ?? []} loading={loading} />
           </div>
         </div>
 

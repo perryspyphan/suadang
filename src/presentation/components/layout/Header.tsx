@@ -61,7 +61,7 @@ const navItems: NavItem[] = [
   { label: 'Báo cáo', href: '/bao-cao' },
 ]
 
-const CLOSE_DELAY = 150 // ms — đủ để chuột di qua khoảng trống
+const CLOSE_DELAY = 150
 
 export default function Header() {
   const pathname = usePathname()
@@ -72,12 +72,8 @@ export default function Header() {
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
   const subCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
-  const clearClose = () => {
-    if (closeTimer.current) clearTimeout(closeTimer.current)
-  }
-  const clearSubClose = () => {
-    if (subCloseTimer.current) clearTimeout(subCloseTimer.current)
-  }
+  const clearClose = () => { if (closeTimer.current) clearTimeout(closeTimer.current) }
+  const clearSubClose = () => { if (subCloseTimer.current) clearTimeout(subCloseTimer.current) }
 
   const scheduleClose = useCallback(() => {
     closeTimer.current = setTimeout(() => {
@@ -87,24 +83,19 @@ export default function Header() {
   }, [])
 
   const scheduleSubClose = useCallback(() => {
-    subCloseTimer.current = setTimeout(() => {
-      setOpenSubLabel(null)
-    }, CLOSE_DELAY)
+    subCloseTimer.current = setTimeout(() => setOpenSubLabel(null), CLOSE_DELAY)
   }, [])
 
-  // Đóng khi click ra ngoài
   useEffect(() => {
     const handler = (e: MouseEvent) => {
       if (navRef.current && !navRef.current.contains(e.target as Node)) {
-        setOpenLabel(null)
-        setOpenSubLabel(null)
+        setOpenLabel(null); setOpenSubLabel(null)
       }
     }
     document.addEventListener('mousedown', handler)
     return () => document.removeEventListener('mousedown', handler)
   }, [])
 
-  // Cleanup timers
   useEffect(() => {
     return () => {
       if (closeTimer.current) clearTimeout(closeTimer.current)
@@ -125,7 +116,6 @@ export default function Header() {
 
   return (
     <>
-      {/* Top bar */}
       <div style={{
         height: 40, background: '#1a2560',
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
@@ -146,14 +136,12 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Main nav */}
       <div style={{
         height: 56, background: '#fff',
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         padding: '0 24px', borderBottom: '1px solid #e5e7eb',
         boxShadow: '0 1px 4px rgba(0,0,0,0.06)',
       }}>
-        {/* Logo */}
         <Link href="/dashboard" style={{ display: 'flex', alignItems: 'center', gap: 8, textDecoration: 'none' }}>
           <div style={{ width: 32, height: 32, background: '#253584', borderRadius: 8, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5">
@@ -164,21 +152,14 @@ export default function Header() {
           <span style={{ fontWeight: 800, fontSize: 18, color: '#253584', letterSpacing: '-0.5px' }}>DGFarm</span>
         </Link>
 
-        {/* Nav */}
         <nav ref={navRef} style={{ display: 'flex', alignItems: 'center', gap: 2 }}>
           {navItems.map(item => {
             const active = isActive(item)
             const isOpen = openLabel === item.label
-
             return (
               <div key={item.label} style={{ position: 'relative' }}
-                onMouseEnter={() => {
-                  clearClose()
-                  if (item.children) setOpenLabel(item.label)
-                }}
-                onMouseLeave={() => {
-                  if (item.children) scheduleClose()
-                }}
+                onMouseEnter={() => { clearClose(); if (item.children) setOpenLabel(item.label) }}
+                onMouseLeave={() => { if (item.children) scheduleClose() }}
               >
                 <div
                   style={{
@@ -189,11 +170,7 @@ export default function Header() {
                     background: active ? '#eef2ff' : isOpen ? '#f5f7ff' : 'transparent',
                     userSelect: 'none', transition: 'background 0.15s',
                   }}
-                  onClick={() => {
-                    router.push(item.href)
-                    if (!item.children) setOpenLabel(null)
-                    setOpenSubLabel(null)
-                  }}
+                  onClick={() => { router.push(item.href); if (!item.children) setOpenLabel(null); setOpenSubLabel(null) }}
                 >
                   {item.label}
                   <svg width="11" height="11" viewBox="0 0 24 24" fill="none"
@@ -203,16 +180,12 @@ export default function Header() {
                   </svg>
                 </div>
 
-                {/* Dropdown tầng 1 */}
                 {item.children && isOpen && (
                   <div
                     style={{
-                      position: 'absolute', top: '100%', left: 0,
-                      minWidth: 160, background: '#fff',
+                      position: 'absolute', top: '100%', left: 0, minWidth: 160, background: '#fff',
                       borderRadius: 8, boxShadow: '0 8px 24px rgba(0,0,0,0.12)',
-                      border: '1px solid #e5e7eb', zIndex: 500,
-                      marginTop: 2,
-                      // Padding ẩn để tạo vùng hover bridge giữa nav và dropdown
+                      border: '1px solid #e5e7eb', zIndex: 500, marginTop: 2,
                       paddingTop: 4, paddingBottom: 4,
                     }}
                     onMouseEnter={() => { clearClose(); clearSubClose() }}
@@ -223,18 +196,10 @@ export default function Header() {
                         ? child.children.some(gc => pathname.startsWith(gc.href))
                         : pathname.startsWith(child.href)
                       const subOpen = openSubLabel === child.label
-
                       return (
                         <div key={child.label} style={{ position: 'relative' }}
-                          onMouseEnter={() => {
-                            clearClose()
-                            clearSubClose()
-                            if (child.children) setOpenSubLabel(child.label)
-                            else setOpenSubLabel(null)
-                          }}
-                          onMouseLeave={() => {
-                            if (child.children) scheduleSubClose()
-                          }}
+                          onMouseEnter={() => { clearClose(); clearSubClose(); if (child.children) setOpenSubLabel(child.label); else setOpenSubLabel(null) }}
+                          onMouseLeave={() => { if (child.children) scheduleSubClose() }}
                         >
                           <div
                             style={{
@@ -243,13 +208,9 @@ export default function Header() {
                               fontWeight: childActive ? 700 : 500,
                               color: childActive ? '#253584' : '#333',
                               background: childActive ? '#eef2ff' : subOpen ? '#f5f7ff' : 'transparent',
-                              cursor: 'pointer', whiteSpace: 'nowrap',
-                              borderRadius: 4, margin: '0 4px',
+                              cursor: 'pointer', whiteSpace: 'nowrap', borderRadius: 4, margin: '0 4px',
                             }}
-                            onClick={() => {
-                              router.push(child.href)
-                              setOpenLabel(null); setOpenSubLabel(null)
-                            }}
+                            onClick={() => { router.push(child.href); setOpenLabel(null); setOpenSubLabel(null) }}
                           >
                             <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                               <span style={{ width: 6, height: 6, borderRadius: '50%', background: childActive ? '#253584' : '#ccc', flexShrink: 0 }} />
@@ -262,16 +223,12 @@ export default function Header() {
                             )}
                           </div>
 
-                          {/* Dropdown tầng 2 */}
                           {child.children && subOpen && (
                             <div
                               style={{
-                                position: 'absolute', top: -4, left: '100%',
-                                minWidth: 160, background: '#fff',
+                                position: 'absolute', top: -4, left: '100%', minWidth: 160, background: '#fff',
                                 borderRadius: 8, boxShadow: '0 8px 24px rgba(0,0,0,0.12)',
-                                border: '1px solid #e5e7eb', zIndex: 600,
-                                // Overlap 4px sang trái để không có gap giữa 2 dropdown
-                                marginLeft: -4,
+                                border: '1px solid #e5e7eb', zIndex: 600, marginLeft: -4,
                                 paddingTop: 4, paddingBottom: 4,
                               }}
                               onMouseEnter={() => { clearClose(); clearSubClose() }}
@@ -280,9 +237,7 @@ export default function Header() {
                               {child.children.map(grandchild => {
                                 const gcActive = pathname.startsWith(grandchild.href)
                                 return (
-                                  <Link
-                                    key={grandchild.href}
-                                    href={grandchild.href}
+                                  <Link key={grandchild.href} href={grandchild.href}
                                     onClick={() => { setOpenLabel(null); setOpenSubLabel(null) }}
                                     style={{
                                       display: 'flex', alignItems: 'center', gap: 8,
@@ -290,8 +245,7 @@ export default function Header() {
                                       fontWeight: gcActive ? 700 : 500,
                                       color: gcActive ? '#253584' : '#333',
                                       background: gcActive ? '#eef2ff' : 'transparent',
-                                      textDecoration: 'none',
-                                      borderRadius: 4, margin: '0 4px',
+                                      textDecoration: 'none', borderRadius: 4, margin: '0 4px',
                                     }}
                                     onMouseEnter={e => { if (!gcActive) (e.currentTarget as HTMLElement).style.background = '#f5f7ff' }}
                                     onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = gcActive ? '#eef2ff' : 'transparent' }}
@@ -313,17 +267,26 @@ export default function Header() {
           })}
         </nav>
 
-        {/* Search */}
+        {/* Search — nhấn Enter để tìm hàng hóa */}
         <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#999" strokeWidth="2" style={{ position: 'absolute', left: 10 }}>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#999" strokeWidth="2"
+            style={{ position: 'absolute', left: 10, pointerEvents: 'none' }}>
             <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
           </svg>
-          <input type="text" placeholder="Tìm kiếm..."
+          <input
+            type="text"
+            placeholder="Tìm hàng hóa..."
             style={{
               height: 34, paddingLeft: 32, paddingRight: 12,
               border: '1px solid #e5e7eb', borderRadius: 8,
               fontSize: 13, outline: 'none', color: '#333',
               background: '#f9fafb', width: 180,
+            }}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') {
+                const q = (e.target as HTMLInputElement).value.trim()
+                if (q) router.push(`/hang-hoa?q=${encodeURIComponent(q)}`)
+              }
             }}
           />
         </div>

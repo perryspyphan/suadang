@@ -1,6 +1,7 @@
 'use client'
 
-import React, { useState, useTransition } from 'react'
+import React, { useState, useTransition, useEffect } from 'react'
+import { useSearchParams } from 'next/navigation'
 import type { Product, ProductType, ProductGroup } from '@/domain/entities/Product'
 import {
   addProductUseCase,
@@ -578,7 +579,14 @@ function Sidebar({
 // ── MAIN PRODUCT TABLE ────────────────────────────────────────
 export default function ProductTable({ initialProducts }: { initialProducts: Product[] }) {
   const [products, setProducts]       = useState<Product[]>(initialProducts)
-  const [search, setSearch]           = useState('')
+  const searchParams = useSearchParams()
+  const [search, setSearch]           = useState(searchParams.get('q') ?? '')
+
+  useEffect(() => {
+    const q = searchParams.get('q') ?? ''
+    setSearch(q)
+    setPage(1)
+  }, [searchParams])
   const [typeFilter, setTypeFilter]   = useState('')
   const [groupFilter, setGroupFilter] = useState('')
   const [stockFilter, setStockFilter] = useState('all')

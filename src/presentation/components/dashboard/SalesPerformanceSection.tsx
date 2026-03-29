@@ -2,24 +2,23 @@
 
 import { JSX } from "react"
 
-// ============================================================
-// SalesPerformanceSection.tsx - Top sản phẩm bán chạy
-// KHÔNG cần import SVG - dùng inline SVG + Tailwind thuần
-// ============================================================
+interface TopProduct {
+  code: string
+  name: string
+  totalSold: number
+}
 
-// Dữ liệu mẫu — sau kết nối Supabase thay bằng useDashboard()
-const barData = [
-  { label: 'Táo (kg)',       value: 76962, display: '76,962' },
-  { label: 'Xà lách (kg)',   value: 74779, display: '74,779' },
-  { label: 'Mận (kg)',       value: 45125, display: '45,125' },
-  { label: 'Hồng giòn (kg)', value: 43887, display: '43,887' },
-  { label: 'Cà rốt (kg)',    value: 8142,  display: '8,142'  },
-]
+interface Props {
+  topProducts: TopProduct[]
+  loading: boolean
+}
 
-const gridLabels = ['0', '20K', '40K', '60K', '80K']
-const maxValue = Math.max(...barData.map(d => d.value))
+const gridLabels = ['0', '25%', '50%', '75%', '100%']
 
-export const SalesPerformanceSection = (): JSX.Element => {
+export const SalesPerformanceSection = ({ topProducts, loading }: Props): JSX.Element => {
+  const maxValue = Math.max(...topProducts.map(p => p.totalSold), 1)
+  const skeletonRows = Array.from({ length: 5 })
+
   return (
     <div>
       <div className="flex items-baseline justify-between mb-3">
@@ -28,49 +27,56 @@ export const SalesPerformanceSection = (): JSX.Element => {
       </div>
 
       <div className="bg-white rounded-[25px] p-6">
-        {/* Grid labels (X-axis) */}
-        <div className="flex justify-between pl-[90px] pr-4 mb-2">
+        <div className="flex justify-between pl-[120px] pr-4 mb-2">
           {gridLabels.map(label => (
             <span key={label} className="text-[rgba(42,51,81,0.42)] text-xs">{label}</span>
           ))}
         </div>
 
-        {/* Bars */}
         <div className="flex flex-col gap-0">
-          {barData.map((item, index) => {
-            const widthPct = (item.value / maxValue) * 100
-            return (
-              <div
-                key={index}
-                className="flex items-center h-16 relative"
-              >
-                {/* Background grid lines */}
-                <div className="absolute inset-0 pl-[90px] pr-4 flex justify-between pointer-events-none">
-                  {gridLabels.map((_, i) => (
-                    <div key={i} className="w-px h-full bg-[rgba(53,82,151,0.1)]" />
-                  ))}
+          {loading
+            ? skeletonRows.map((_, i) => (
+                <div key={i} className="flex items-center h-16">
+                  <div className="w-[116px] pr-3 text-right shrink-0">
+                    <div className="h-3 bg-gray-100 rounded ml-auto w-20 animate-pulse" />
+                  </div>
+                  <div className="flex-1 flex items-center gap-2">
+                    <div className="h-6 bg-gray-100 rounded animate-pulse" style={{ width: `${30 + i * 15}%` }} />
+                  </div>
                 </div>
-
-                {/* Label bên trái */}
-                <div className="w-[86px] pr-3 text-right shrink-0 z-10">
-                  <span className="text-[rgba(37,43,65,0.64)] text-xs leading-tight">
-                    {item.label}
-                  </span>
+              ))
+            : topProducts.length === 0
+            ? (
+                <div className="flex items-center justify-center h-24 text-[#718EBF] text-sm">
+                  Chưa có dữ liệu bán hàng
                 </div>
-
-                {/* Bar */}
-                <div className="flex-1 flex items-center gap-2 z-10">
-                  <div
-                    className="h-6 bg-[#1AA367] rounded transition-all duration-500"
-                    style={{ width: `${widthPct}%` }}
-                  />
-                  <span className="text-[rgba(37,43,65,0.64)] text-[10px] font-medium whitespace-nowrap">
-                    {item.display}
-                  </span>
-                </div>
-              </div>
-            )
-          })}
+              )
+            : topProducts.map((item) => {
+                const widthPct = (item.totalSold / maxValue) * 100
+                const label = item.name.length > 18 ? item.name.slice(0, 16) + '…' : item.name
+                return (
+                  <div key={item.code} className="flex items-center h-16 relative">
+                    <div className="absolute inset-0 pl-[120px] pr-4 flex justify-between pointer-events-none">
+                      {gridLabels.map((_, i) => (
+                        <div key={i} className="w-px h-full bg-[rgba(53,82,151,0.1)]" />
+                      ))}
+                    </div>
+                    <div className="w-[116px] pr-3 text-right shrink-0 z-10">
+                      <span className="text-[rgba(37,43,65,0.64)] text-xs leading-tight">{label}</span>
+                    </div>
+                    <div className="flex-1 flex items-center gap-2 z-10">
+                      <div
+                        className="h-6 bg-[#1AA367] rounded transition-all duration-700"
+                        style={{ width: `${widthPct}%`, minWidth: widthPct > 0 ? 4 : 0 }}
+                      />
+                      <span className="text-[rgba(37,43,65,0.64)] text-[10px] font-medium whitespace-nowrap">
+                        {item.totalSold.toLocaleString('vi-VN')}
+                      </span>
+                    </div>
+                  </div>
+                )
+              })
+          }
         </div>
       </div>
     </div>

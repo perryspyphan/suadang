@@ -10,6 +10,7 @@
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
+      --tw-space-y-reverse: 0;
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
@@ -55,6 +56,7 @@
 @layer theme {
   :root, :host {
     --color-red-600: #e40014;
+    --color-gray-100: #f3f4f6;
     --color-black: #000;
     --color-white: #fff;
     --spacing: .25rem;
@@ -74,6 +76,8 @@
     --leading-tight: 1.25;
     --radius-lg: .5rem;
     --radius-xl: .75rem;
+    --animate-spin: spin 1s linear infinite;
+    --animate-pulse: pulse 2s cubic-bezier(.4, 0, .6, 1) infinite;
     --default-transition-duration: .15s;
     --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     --default-font-family: var(--font-geist-sans);
@@ -83,6 +87,7 @@
   @supports (color: lab(0% 0 0)) {
     :root, :host {
       --color-red-600: lab(48.4493% 77.4328 61.5452);
+      --color-gray-100: lab(96.1596% -.082314 -1.13575);
     }
   }
 }
@@ -432,6 +437,10 @@
     margin-bottom: calc(var(--spacing) * 8);
   }
 
+  .ml-auto {
+    margin-left: auto;
+  }
+
   .block {
     display: block;
   }
@@ -462,6 +471,10 @@
 
   .h-2\.5 {
     height: calc(var(--spacing) * 2.5);
+  }
+
+  .h-3 {
+    height: calc(var(--spacing) * 3);
   }
 
   .h-3\.5 {
@@ -500,6 +513,14 @@
     height: calc(var(--spacing) * 16);
   }
 
+  .h-24 {
+    height: calc(var(--spacing) * 24);
+  }
+
+  .h-\[160px\] {
+    height: 160px;
+  }
+
   .h-full {
     height: 100%;
   }
@@ -512,6 +533,10 @@
     min-height: 100vh;
   }
 
+  .w-1\/3 {
+    width: 33.3333%;
+  }
+
   .w-2\.5 {
     width: calc(var(--spacing) * 2.5);
   }
@@ -522,6 +547,10 @@
 
   .w-4 {
     width: calc(var(--spacing) * 4);
+  }
+
+  .w-4\/5 {
+    width: 80%;
   }
 
   .w-5 {
@@ -548,12 +577,20 @@
     width: calc(var(--spacing) * 14);
   }
 
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
+
   .w-28 {
     width: calc(var(--spacing) * 28);
   }
 
   .w-\[86px\] {
     width: 86px;
+  }
+
+  .w-\[116px\] {
+    width: 116px;
   }
 
   .w-full {
@@ -595,6 +632,14 @@
 
   .transform {
     transform: var(--tw-rotate-x, ) var(--tw-rotate-y, ) var(--tw-rotate-z, ) var(--tw-skew-x, ) var(--tw-skew-y, );
+  }
+
+  .animate-pulse {
+    animation: var(--animate-pulse);
+  }
+
+  .animate-spin {
+    animation: var(--animate-spin);
   }
 
   .resize {
@@ -657,6 +702,12 @@
     gap: calc(var(--spacing) * 6);
   }
 
+  :where(.space-y-1\.5 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 1.5) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 1.5) * calc(1 - var(--tw-space-y-reverse)));
+  }
+
   .truncate {
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -688,8 +739,21 @@
     border-width: 1px;
   }
 
+  .border-4 {
+    border-style: var(--tw-border-style);
+    border-width: 4px;
+  }
+
   .border-\[\#DFE5EE\] {
     border-color: #dfe5ee;
+  }
+
+  .border-\[\#FCAA0B\] {
+    border-color: #fcaa0b;
+  }
+
+  .border-t-transparent {
+    border-top-color: #0000;
   }
 
   .bg-\[\#1AA367\] {
@@ -712,6 +776,10 @@
     background-color: #e7edff;
   }
 
+  .bg-\[\#F0F0F0\] {
+    background-color: #f0f0f0;
+  }
+
   .bg-\[\#F5F7FA\] {
     background-color: #f5f7fa;
   }
@@ -730,6 +798,10 @@
 
   .bg-\[rgba\(53\,82\,151\,0\.1\)\] {
     background-color: #3552971a;
+  }
+
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
   }
 
   .bg-transparent {
@@ -814,6 +886,10 @@
 
   .pl-\[90px\] {
     padding-left: 90px;
+  }
+
+  .pl-\[120px\] {
+    padding-left: 120px;
   }
 
   .text-center {
@@ -1004,6 +1080,11 @@
     transition-duration: .5s;
   }
 
+  .duration-700 {
+    --tw-duration: .7s;
+    transition-duration: .7s;
+  }
+
   .outline-none {
     --tw-outline-style: none;
     outline-style: none;
@@ -1162,6 +1243,12 @@ body {
 @property --tw-skew-y {
   syntax: "*";
   inherits: false
+}
+
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
 }
 
 @property --tw-border-style {
@@ -1364,6 +1451,18 @@ body {
 @property --tw-duration {
   syntax: "*";
   inherits: false
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
 }
 
 /*# sourceMappingURL=src_app_globals_css_bad6b30c._.single.css.map*/

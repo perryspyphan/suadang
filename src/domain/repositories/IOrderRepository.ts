@@ -9,6 +9,15 @@ export interface IOrderRepository {
   }>
   findMonthlyRevenue(): Promise<{ month: string; revenue: number }[]>
   findTopSellingProducts(): Promise<{ code: string; name: string; totalSold: number }[]>
+  findLowStockCount(): Promise<number>
+  findRecentActivities(): Promise<{
+    id: number
+    staff_id: string
+    action: string
+    target_id: string | null
+    note: string | null
+    created_at: string
+  }[]>
   findConflictedOrders(productCode: string): Promise<{
     order_id:       string
     customer_id:    string
