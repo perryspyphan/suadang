@@ -1,0 +1,110 @@
+{
+  "node": {
+    "4028572b16f567add9a517b7c4fc5ddf4cbf3eb15e": {
+      "workers": {
+        "app/(admin)/khach-hang/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/khach-hang/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/application/use-cases/customer/CustomerUsecase.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "addCustomerUseCase",
+          "filename": "src/application/use-cases/customer/CustomerUsecase.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/khach-hang/page": "action-browser"
+      },
+      "exportedName": "addCustomerUseCase",
+      "filename": "src/application/use-cases/customer/CustomerUsecase.ts"
+    },
+    "409167213ba8267a14a880e126c64381bdf41c50e9": {
+      "workers": {
+        "app/(admin)/khach-hang/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/khach-hang/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/application/use-cases/customer/CustomerUsecase.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getCustomersUseCase",
+          "filename": "src/application/use-cases/customer/CustomerUsecase.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/khach-hang/page": "rsc"
+      },
+      "exportedName": "getCustomersUseCase",
+      "filename": "src/application/use-cases/customer/CustomerUsecase.ts"
+    },
+    "409c0a535d6cfe7a464fdf385240f30f651830e189": {
+      "workers": {
+        "app/(admin)/khach-hang/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/khach-hang/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/application/use-cases/customer/CustomerUsecase.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteCustomersUseCase",
+          "filename": "src/application/use-cases/customer/CustomerUsecase.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/khach-hang/page": "action-browser"
+      },
+      "exportedName": "deleteCustomersUseCase",
+      "filename": "src/application/use-cases/customer/CustomerUsecase.ts"
+    },
+    "40abc9c3283ae5b70a246c9343f217703605ba7171": {
+      "workers": {
+        "app/(admin)/khach-hang/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/khach-hang/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/application/use-cases/customer/CustomerUsecase.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getOrdersByCustomerUseCase",
+          "filename": "src/application/use-cases/customer/CustomerUsecase.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/khach-hang/page": "action-browser"
+      },
+      "exportedName": "getOrdersByCustomerUseCase",
+      "filename": "src/application/use-cases/customer/CustomerUsecase.ts"
+    },
+    "40d9bebbf2f4eee718995615a4c66b90b7f622a460": {
+      "workers": {
+        "app/(admin)/khach-hang/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/khach-hang/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/application/use-cases/customer/CustomerUsecase.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "syncCustomerTierUseCase",
+          "filename": "src/application/use-cases/customer/CustomerUsecase.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/khach-hang/page": "rsc"
+      },
+      "exportedName": "syncCustomerTierUseCase",
+      "filename": "src/application/use-cases/customer/CustomerUsecase.ts"
+    },
+    "40e88be8383d3f63acafb899001aed90e0e8b868a8": {
+      "workers": {
+        "app/(admin)/khach-hang/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/khach-hang/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/application/use-cases/customer/CustomerUsecase.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getOrderWithItemsUseCase",
+          "filename": "src/application/use-cases/customer/CustomerUsecase.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/khach-hang/page": "action-browser"
+      },
+      "exportedName": "getOrderWithItemsUseCase",
+      "filename": "src/application/use-cases/customer/CustomerUsecase.ts"
+    },
+    "60b7f2ccdc5917e978c5626c27e269274fe47c9cac": {
+      "workers": {
+        "app/(admin)/khach-hang/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/khach-hang/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/application/use-cases/customer/CustomerUsecase.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateCustomerUseCase",
+          "filename": "src/application/use-cases/customer/CustomerUsecase.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/khach-hang/page": "action-browser"
+      },
+      "exportedName": "updateCustomerUseCase",
+      "filename": "src/application/use-cases/customer/CustomerUsecase.ts"
+    }
+  },
+  "edge": {}
+}

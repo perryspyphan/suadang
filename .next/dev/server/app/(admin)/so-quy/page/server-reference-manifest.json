@@ -1,0 +1,200 @@
+{
+  "node": {
+    "40d29dd586b0873663adf66fdb91546cb9b0ecd010": {
+      "workers": {
+        "app/(admin)/so-quy/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/so-quy/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/application/use-cases/cashbook/CashbookUseCases.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getDanhSachPhieu",
+          "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/so-quy/page": "action-browser"
+      },
+      "exportedName": "getDanhSachPhieu",
+      "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+    },
+    "4025a7a1994aba6ff4c27f144424b8328fbe172289": {
+      "workers": {
+        "app/(admin)/so-quy/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/so-quy/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/application/use-cases/cashbook/CashbookUseCases.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "lapPhieuThu",
+          "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/so-quy/page": "action-browser"
+      },
+      "exportedName": "lapPhieuThu",
+      "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+    },
+    "40ac428944286be532e01be159f7f01ab6af602cd8": {
+      "workers": {
+        "app/(admin)/so-quy/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/so-quy/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/application/use-cases/cashbook/CashbookUseCases.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "lapPhieuChi",
+          "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/so-quy/page": "action-browser"
+      },
+      "exportedName": "lapPhieuChi",
+      "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+    },
+    "6043b840a9f237182918966ec0913052c1006b71d1": {
+      "workers": {
+        "app/(admin)/so-quy/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/so-quy/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/application/use-cases/cashbook/CashbookUseCases.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "capNhatPhieu",
+          "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/so-quy/page": "action-browser"
+      },
+      "exportedName": "capNhatPhieu",
+      "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+    },
+    "4093f232dad89e73bf05980ca1db5c50b2e6641ac9": {
+      "workers": {
+        "app/(admin)/so-quy/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/so-quy/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/application/use-cases/cashbook/CashbookUseCases.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "huyPhieu",
+          "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/so-quy/page": "action-browser"
+      },
+      "exportedName": "huyPhieu",
+      "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+    },
+    "4063e4fe494a40597510663ca709d4212e773a24c3": {
+      "workers": {
+        "app/(admin)/so-quy/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/so-quy/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/application/use-cases/cashbook/CashbookUseCases.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getLoaiThuChi",
+          "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/so-quy/page": "action-browser"
+      },
+      "exportedName": "getLoaiThuChi",
+      "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+    },
+    "4017576c282d1f1848646cd078e7dc7e5dc62a1104": {
+      "workers": {
+        "app/(admin)/so-quy/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/so-quy/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/application/use-cases/cashbook/CashbookUseCases.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "themLoaiThuChi",
+          "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/so-quy/page": "action-browser"
+      },
+      "exportedName": "themLoaiThuChi",
+      "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+    },
+    "40aa8e3079cf767c6683d199b916c6e85812acac76": {
+      "workers": {
+        "app/(admin)/so-quy/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/so-quy/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/application/use-cases/cashbook/CashbookUseCases.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "xoaLoaiThuChi",
+          "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/so-quy/page": "action-browser"
+      },
+      "exportedName": "xoaLoaiThuChi",
+      "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+    },
+    "00a131fbfc31857fe45e057271cfdbc3b25774e58d": {
+      "workers": {
+        "app/(admin)/so-quy/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/so-quy/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/application/use-cases/cashbook/CashbookUseCases.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getTaiKhoanQuy",
+          "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/so-quy/page": "action-browser"
+      },
+      "exportedName": "getTaiKhoanQuy",
+      "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+    },
+    "006b576a8f025017b2eecff4ed085826e7b0584305": {
+      "workers": {
+        "app/(admin)/so-quy/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/so-quy/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/application/use-cases/cashbook/CashbookUseCases.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getTongQuy",
+          "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/so-quy/page": "action-browser"
+      },
+      "exportedName": "getTongQuy",
+      "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+    },
+    "40b53326a61fe2a5c644dcf5844f22384ec94b4edf": {
+      "workers": {
+        "app/(admin)/so-quy/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/so-quy/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/application/use-cases/cashbook/CashbookUseCases.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "themTaiKhoanQuy",
+          "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/so-quy/page": "action-browser"
+      },
+      "exportedName": "themTaiKhoanQuy",
+      "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+    },
+    "605091e3894dafb4df3d6ebaea72a7599d8f34f515": {
+      "workers": {
+        "app/(admin)/so-quy/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/so-quy/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/application/use-cases/cashbook/CashbookUseCases.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "suaTaiKhoanQuy",
+          "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/so-quy/page": "action-browser"
+      },
+      "exportedName": "suaTaiKhoanQuy",
+      "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+    },
+    "4083646e33c4f9c4233f5f6c847003ccdae6e8e2ba": {
+      "workers": {
+        "app/(admin)/so-quy/page": {
+          "moduleId": "[project]/.next-internal/server/app/(admin)/so-quy/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/application/use-cases/cashbook/CashbookUseCases.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "xoaTaiKhoanQuy",
+          "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+        }
+      },
+      "layer": {
+        "app/(admin)/so-quy/page": "action-browser"
+      },
+      "exportedName": "xoaTaiKhoanQuy",
+      "filename": "src/application/use-cases/cashbook/CashbookUseCases.ts"
+    }
+  },
+  "edge": {}
+}
