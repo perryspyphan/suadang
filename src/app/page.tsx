@@ -1,5 +1,3 @@
-import { Dashboard } from '@/presentation/components/dashboard'
-
-export default function Home() {
-  return <Dashboard />
+export default function RootPage() {
+  return null; // De Middleware tu dieu huong vao /login hoac /dashboard
 }

@@ -36,17 +36,22 @@ async function middleware(request) {
     });
     const { data: { user } } = await supabase.auth.getUser();
     const { pathname } = request.nextUrl;
+    // giu nguyen logic cua ban nma loai tru cac file tinh de tranh trang trang
+    if (pathname.startsWith('/_next') || pathname.includes('.') || pathname.startsWith('/api')) {
+        return response;
+    }
     // Chưa đăng nhập → redirect về login
     if (!user && pathname !== '/login' && pathname !== '/register') {
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$web$2f$exports$2f$index$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["NextResponse"].redirect(new URL('/login', request.url));
     }
-    // Đã đăng nhập mà vào login/register → redirect về trang chủ
+    // Đã đăng nhập mà vào login/register → redirect về dashboard (thay vi '/' de tranh loop)
     if (user && (pathname === '/login' || pathname === '/register')) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$web$2f$exports$2f$index$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["NextResponse"].redirect(new URL('/', request.url));
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$web$2f$exports$2f$index$2e$js__$5b$middleware$2d$edge$5d$__$28$ecmascript$29$__["NextResponse"].redirect(new URL('/dashboard', request.url));
     }
     return response;
 }
 const config = {
+    // matcher giu nguyen nhu ban dau cua ban
     matcher: [
         '/((?!_next/static|_next/image|favicon.ico|.*\\.png|.*\\.svg).*)'
     ]

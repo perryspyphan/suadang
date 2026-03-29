@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///D:/Perry/Downloads/golden-farm-so-quy/golden-farm-master/src/app/page.tsx"],"sourcesContent":["export default function RootPage() {\r\n  return null; // De Middleware tu dieu huong vao /login hoac /dashboard\r\n}"],"names":[],"mappings":";;;;AAAe,SAAS;IACtB,OAAO,MAAM,yDAAyD;AACxE"}}]
+}

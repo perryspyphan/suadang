@@ -3,9 +3,8 @@
 import { JSX } from 'react'
 import { MonthlyRevenueSection } from './MonthlyRevenueSection'
 import { RecentActivitiesSection } from './RecentActivitiesSection'
-import { SalesChannelsSection } from './SalesChannelsSection'
 import { SalesPerformanceSection } from './SalesPerformanceSection'
-import Header from '@/presentation/components/layout/Header'
+
 
 const statCards = [
   {
@@ -19,7 +18,7 @@ const statCards = [
     ),
   },
   {
-    label: 'Đơn online',
+    label: 'Đơn hàng hóa',
     value: '$3,460',
     iconBg: 'bg-[#FFE0EB]',
     icon: (
@@ -42,21 +41,18 @@ const statCards = [
 
 export const Dashboard = (): JSX.Element => {
   return (
-    <div className="relative min-h-screen bg-[#F5F7FA] font-['Inter',sans-serif]">
-      <Header />
-
-      {/* ── Main content ── */}
+    <div className="min-h-screen bg-[#F5F7FA] font-['Inter',sans-serif] w-full">
       <div className="max-w-[1440px] mx-auto px-6 py-6">
-
-        {/* Tiêu đề */}
+        
+        {/* 1. Tiêu đề */}
         <h2 className="text-[#343C6A] text-[22px] font-semibold mb-6">
           Kết quả bán hàng hôm nay
         </h2>
 
-        {/* Stat Cards */}
-        <div className="flex gap-4 mb-8">
+        {/* 2. Thẻ thống kê (Stat Cards) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           {statCards.map((card) => (
-            <div key={card.label} className="bg-white rounded-[25px] px-8 py-5 flex items-center gap-4 shadow-sm min-w-[220px]">
+            <div key={card.label} className="bg-white rounded-[25px] px-8 py-5 flex items-center gap-4 shadow-sm">
               <div className={`${card.iconBg} w-14 h-14 rounded-full flex items-center justify-center shrink-0`}>
                 {card.icon}
               </div>
@@ -68,27 +64,22 @@ export const Dashboard = (): JSX.Element => {
           ))}
         </div>
 
-        {/* Charts row */}
-        <div className="grid grid-cols-3 gap-6 mb-6">
-          {/* Monthly Revenue - chiếm 2/3 */}
-          <div className="col-span-2">
+        {/* 3. Hàng biểu đồ (Dùng Grid 3 cột) */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+          {/* Doanh thu tháng - Chiếm 2 phần */}
+          <div className="lg:col-span-2">
             <MonthlyRevenueSection />
           </div>
-          {/* Recent Activities - chiếm 1/3 */}
-          <div className="col-span-1">
+          {/* Hoạt động gần đây - Chiếm 1 phần */}
+          <div className="lg:col-span-1">
             <RecentActivitiesSection />
           </div>
         </div>
 
-        {/* Bottom row */}
-        <div className="grid grid-cols-3 gap-6">
-          {/* Top sản phẩm - chiếm 2/3 */}
-          <div className="col-span-2">
+        {/* 4. Hàng dưới cùng (Bảng sản phẩm tràn hết 3 cột) */}
+        <div className="grid grid-cols-1 gap-6">
+          <div className="w-full">
             <SalesPerformanceSection />
-          </div>
-          {/* Kênh bán hàng - chiếm 1/3 */}
-          <div className="col-span-1">
-            <SalesChannelsSection />
           </div>
         </div>
 

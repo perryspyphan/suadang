@@ -1,5 +1,4 @@
 export { Dashboard } from './Dashboard'
 export { MonthlyRevenueSection } from './MonthlyRevenueSection'
 export { RecentActivitiesSection } from './RecentActivitiesSection'
-export { SalesChannelsSection } from './SalesChannelsSection'
 export { SalesPerformanceSection } from './SalesPerformanceSection'
