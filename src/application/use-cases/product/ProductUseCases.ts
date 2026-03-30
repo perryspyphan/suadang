@@ -45,7 +45,8 @@ export async function addProductUseCase(form: AddProductDTO) {
 
 export async function updateProductUseCase(id: string, form: UpdateProductDTO) {
   if (form.name !== undefined && !form.name?.trim()) throw new Error('Tên hàng không được rỗng')
-  return getProductRepository().update(id, form)
+  const { branch_stock: _, ...safeForm } = form as any
+  return getProductRepository().update(id, safeForm)
 }
 
 export async function deleteProductsUseCase(ids: string[]) {

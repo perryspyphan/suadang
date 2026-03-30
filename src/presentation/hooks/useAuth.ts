@@ -36,7 +36,7 @@ export function useAuth() {
 
   const logout = async () => {
     await SupabaseAuthService.signOut()
-    router.push('/login')
+    window.location.replace('/login')
   }
 
   return { login, register, logout, loading, error }

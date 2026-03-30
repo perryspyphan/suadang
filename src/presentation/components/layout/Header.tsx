@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
+import { useAuth } from '@/presentation/hooks/useAuth'
 
 interface NavChild {
   label: string
@@ -66,9 +67,12 @@ const CLOSE_DELAY = 150
 export default function Header() {
   const pathname = usePathname()
   const router = useRouter()
+  const { logout } = useAuth()
   const [openLabel, setOpenLabel] = useState<string | null>(null)
   const [openSubLabel, setOpenSubLabel] = useState<string | null>(null)
+  const [userMenuOpen, setUserMenuOpen] = useState(false)
   const navRef = useRef<HTMLDivElement>(null)
+  const userMenuRef = useRef<HTMLDivElement>(null)
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
   const subCloseTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
@@ -90,6 +94,9 @@ export default function Header() {
     const handler = (e: MouseEvent) => {
       if (navRef.current && !navRef.current.contains(e.target as Node)) {
         setOpenLabel(null); setOpenSubLabel(null)
+      }
+      if (userMenuRef.current && !userMenuRef.current.contains(e.target as Node)) {
+        setUserMenuOpen(false)
       }
     }
     document.addEventListener('mousedown', handler)
@@ -129,10 +136,51 @@ export default function Header() {
             </svg>
             Bán online
           </span>
-          <span style={{ display: 'flex', alignItems: 'center', gap: 6, cursor: 'pointer' }}>
-            <div style={{ width: 26, height: 26, background: '#253584', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 11, fontWeight: 700 }}>A</div>
-            Admin
-          </span>
+          <div ref={userMenuRef} style={{ position: 'relative' }}>
+            <span
+              style={{ display: 'flex', alignItems: 'center', gap: 6, cursor: 'pointer', padding: '4px 8px', borderRadius: 6, transition: 'background 0.15s', background: userMenuOpen ? 'rgba(255,255,255,0.15)' : 'transparent' }}
+              onClick={() => setUserMenuOpen(v => !v)}
+            >
+              <div style={{ width: 26, height: 26, background: '#253584', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 11, fontWeight: 700, border: '2px solid rgba(255,255,255,0.3)' }}>A</div>
+              Admin
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"
+                style={{ transition: 'transform 0.2s', transform: userMenuOpen ? 'rotate(180deg)' : 'rotate(0deg)', opacity: 0.7 }}>
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </span>
+
+            {userMenuOpen && (
+              <div style={{
+                position: 'absolute', top: 'calc(100% + 8px)', right: 0, minWidth: 160, background: '#fff',
+                borderRadius: 8, boxShadow: '0 8px 24px rgba(0,0,0,0.15)', border: '1px solid #e5e7eb',
+                zIndex: 999, paddingTop: 4, paddingBottom: 4,
+              }}>
+                <div style={{ padding: '8px 16px 8px', borderBottom: '1px solid #f0f0f0', marginBottom: 4 }}>
+                  <div style={{ fontSize: 12, color: '#888' }}>Tài khoản</div>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: '#333' }}>Admin</div>
+                </div>
+                <button
+                  onClick={() => { setUserMenuOpen(false); logout() }}
+                  style={{
+                    display: 'flex', alignItems: 'center', gap: 8, width: 'calc(100% - 8px)',
+                    padding: '10px 16px', fontSize: 13, fontWeight: 500,
+                    color: '#dc2626', background: 'transparent', border: 'none',
+                    cursor: 'pointer', textAlign: 'left', borderRadius: 4, margin: '0 4px',
+                    transition: 'background 0.15s',
+                  }}
+                  onMouseEnter={e => (e.currentTarget.style.background = '#fef2f2')}
+                  onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
+                >
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+                    <polyline points="16 17 21 12 16 7"/>
+                    <line x1="21" y1="12" x2="9" y2="12"/>
+                  </svg>
+                  Đăng xuất
+                </button>
+              </div>
+            )}
+          </div>
         </div>
       </div>
 
@@ -173,11 +221,13 @@ export default function Header() {
                   onClick={() => { router.push(item.href); if (!item.children) setOpenLabel(null); setOpenSubLabel(null) }}
                 >
                   {item.label}
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" strokeWidth="2.5"
-                    style={{ transition: 'transform 0.2s', transform: isOpen ? 'rotate(90deg)' : 'rotate(0deg)', opacity: 0.6 }}>
-                    <polyline points="9 18 15 12 9 6" />
-                  </svg>
+                  {item.children && (
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" strokeWidth="2.5"
+                      style={{ transition: 'transform 0.2s', transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)', opacity: 0.6 }}>
+                      <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                  )}
                 </div>
 
                 {item.children && isOpen && (
